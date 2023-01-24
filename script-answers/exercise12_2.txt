@@ -1,0 +1,15 @@
+Script iniciado en 2022-11-10 11:14:14-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="100" LINES="25"]
+]0;family@family-80xg:~[?2004h[family@family-80xg ~]$ [7mdocker run -it ubuntu bash[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -it ubuntu bash
+[?2004l[?2004h]0;root@86c7b717a615: /root@86c7b717a615:/# [K]0;root@86c7b717a615: /root@86c7b717a615:/# cd /usr/src/
+[?2004l[?2004h]0;root@86c7b717a615: /usr/srcroot@86c7b717a615:/usr/src# ls} 
+[?2004l[?2004h]0;root@86c7b717a615: /usr/srcroot@86c7b717a615:/usr/src# mkdir app
+[?2004l[?2004h]0;root@86c7b717a615: /usr/srcroot@86c7b717a615:/usr/src# cd app
+[?2004l[?2004h]0;root@86c7b717a615: /usr/src/approot@86c7b717a615:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@86c7b717a615: /usr/src/approot@86c7b717a615:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@86c7b717a615: /usr/src/approot@86c7b717a615:/usr/src/app# exit
+[?2004lexit
+]0;family@family-80xg:~[?2004h[family@family-80xg ~]$ exit
+[?2004lexit
+
+Script terminado en 2022-11-10 11:15:20-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

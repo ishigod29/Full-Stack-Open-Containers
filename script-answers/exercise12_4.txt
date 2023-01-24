@@ -1,0 +1,111 @@
+Script iniciado en 2022-11-10 11:34:56-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="100" LINES="25"]
+]0;family@family-80xg:~/Escritorio[?2004h[family@family-80xg Escritorio]$ docker start -i competent_lumiere 
+[?2004l[?2004h]0;root@86c7b717a615: /root@86c7b717a615:/# [K]0;root@86c7b717a615: /root@86c7b717a615:/# [7mcurl -sL https://deb.nodesource.com/setup_16.x | bash[27m
+[7mapt install -y nodejs[27m[Acurl -sL https://deb.nodesource.com/setup_16.x | bash
+apt install -y nodejs
+[?2004lbash: curl: command not found
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... 7%Reading package lists... 8%Reading package lists... 8%Reading package lists... 67%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 85%Reading package lists... 85%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js
+  libnghttp2-14 libnode72 libuv1 nodejs-doc openssl
+Suggested packages:
+  apache2 | lighttpd | httpd npm
+The following NEW packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js
+  libnghttp2-14 libnode72 libuv1 nodejs nodejs-doc openssl
+0 upgraded, 12 newly installed, 0 to remove and 0 not upgraded.
+Need to get 26.1 MB of archives.
+After this operation, 93.0 MB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com (91.189.91.39)][0m[33m                                                    0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.7 [1183 kB]
+[33m0% [1 openssl 12.6 kB/1183 kB 1%][0m[33m0% [1 openssl 55.1 kB/1183 kB 5%][0m[33m1% [1 openssl 363 kB/1183 kB 31%][0m[33m                                 5% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 ca-certificates all 20211016 [148 kB]
+[33m5% [2 ca-certificates 32.8 kB/148 kB 22%][0m[33m                                         7% [Waiting for headers][0m                        Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+[33m7% [3 libicu70 19.3 kB/10.6 MB 0%][0m[33m                                  9% [3 libicu70 368 kB/10.6 MB 3%][0m[33m11% [3 libicu70 1048 kB/10.6 MB 10%][0m[33m14% [3 libicu70 2075 kB/10.6 MB 20%][0m[33m14% [3 libicu70 2075 kB/10.6 MB 20%][0m[33m18% [3 libicu70 3369 kB/10.6 MB 32%][0m[33m22% [3 libicu70 4784 kB/10.6 MB 45%][0m[33m25% [3 libicu70 5656 kB/10.6 MB 53%]                                                  1099 kB/s 17s[0m[33m27% [3 libicu70 6378 kB/10.6 MB 60%]                                                  1099 kB/s 16s[0m[33m29% [3 libicu70 7036 kB/10.6 MB 66%]                                                  1099 kB/s 16s[0m[33m31% [3 libicu70 7710 kB/10.6 MB 73%]                                                  1099 kB/s 15s[0m[33m33% [3 libicu70 8391 kB/10.6 MB 79%]                                                  1099 kB/s 14s[0m[33m37% [3 libicu70 9808 kB/10.6 MB 93%]                                                  1099 kB/s 13s[0m[33m38% [3 libicu70 10.0 MB/10.6 MB 95%]                                                  1099 kB/s 13s[0m[33m41% [Waiting for headers]                                                             1099 kB/s 12s[0m                                                                                                   Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnghttp2-14 amd64 1.43.0-1build3 [76.3 kB]
+[33m42% [4 libnghttp2-14 14.1 kB/76.3 kB 18%]                                             1099 kB/s 12s[0m[33m43% [Working]                                                                         1099 kB/s 12s[0m                                                                                                   Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 libuv1 amd64 1.43.0-1 [93.1 kB]
+[33m43% [5 libuv1 669 B/93.1 kB 1%]                                                       1099 kB/s 12s[0m[33m45% [Working]                                                                         1099 kB/s 12s[0m                                                                                                   Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 javascript-common all 11+nmu1 [5936 B]
+[33m45% [6 javascript-common 5936 B/5936 B 100%]                                          1099 kB/s 12s[0m[33m47% [Working]                                                                         1099 kB/s 12s[0m                                                                                                   Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+[33m47% [7 libbrotli1 0 B/315 kB 0%]                                                      1099 kB/s 12s[0m[33m50% [Working]                                                                         1099 kB/s 12s[0m                                                                                                   Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libjs-highlight.js all 9.18.5+dfsg1-1 [367 kB]
+[33m50% [8 libjs-highlight.js 11.9 kB/367 kB 3%]                                          1099 kB/s 12s[0m[33m52% [Working]                                                                         1099 kB/s 12s[0m                                                                                                   Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libc-ares2 amd64 1.18.1-1build1 [44.9 kB]
+[33m52% [9 libc-ares2 7071 B/44.9 kB 16%]                                                 1099 kB/s 12s[0m[33m54% [Working]                                                                         1099 kB/s 12s[0m                                                                                                   Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libnode72 amd64 12.22.9~dfsg-1ubuntu3 [10.8 MB]
+[33m54% [10 libnode72 27.4 kB/10.8 MB 0%]                                                 1099 kB/s 12s[0m[33m58% [10 libnode72 1222 kB/10.8 MB 11%]                                                1099 kB/s 11s[0m[33m61% [10 libnode72 2126 kB/10.8 MB 20%]                                                1099 kB/s 10s[0m[33m64% [10 libnode72 3038 kB/10.8 MB 28%]                                                 1099 kB/s 9s[0m[33m64% [10 libnode72 3319 kB/10.8 MB 31%]                                                 1099 kB/s 9s[0m[33m66% [10 libnode72 3784 kB/10.8 MB 35%]                                                 1506 kB/s 6s[0m[33m69% [10 libnode72 4691 kB/10.8 MB 43%]                                                 1506 kB/s 5s[0m[33m71% [10 libnode72 5315 kB/10.8 MB 49%]                                                 1506 kB/s 5s[0m[33m73% [10 libnode72 6202 kB/10.8 MB 57%]                                                 1506 kB/s 4s[0m[33m76% [10 libnode72 7090 kB/10.8 MB 66%]                                                 1506 kB/s 4s[0m[33m78% [10 libnode72 7706 kB/10.8 MB 71%]                                                 1506 kB/s 3s[0m[33m80% [10 libnode72 8306 kB/10.8 MB 77%]                                                 1506 kB/s 3s[0m[33m82% [10 libnode72 8928 kB/10.8 MB 83%]                                                 1506 kB/s 2s[0m[33m86% [10 libnode72 10.4 MB/10.8 MB 96%]                                                 1506 kB/s 1s[0m[33m89% [Waiting for headers]                                                              1506 kB/s 1s[0m                                                                                                   Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs-doc all 12.22.9~dfsg-1ubuntu3 [2409 kB]
+[33m89% [11 nodejs-doc 11.1 kB/2409 kB 0%]                                                 1506 kB/s 1s[0m[33m92% [11 nodejs-doc 931 kB/2409 kB 39%]                                                 1506 kB/s 1s[0m[33m95% [11 nodejs-doc 1862 kB/2409 kB 77%]                                                1506 kB/s 0s[0m[33m98% [Working]                                                                          1506 kB/s 0s[0m                                                                                                   Get:12 http://archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs amd64 12.22.9~dfsg-1ubuntu3 [122 kB]
+[33m98% [12 nodejs 4096 B/122 kB 3%]                                                       1506 kB/s 0s[0m[33m100% [Working]                                                                         1506 kB/s 0s[0m                                                                                                   Fetched 26.1 MB in 18s (1422 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;24r8[1ASelecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4468 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.7_amd64.deb ...
+7[25;0f[42m[30mProgress: [  0%][49m[39m [..............................................................................] 87[25;0f[42m[30mProgress: [  2%][49m[39m [#.............................................................................] 8Unpacking openssl (3.0.2-0ubuntu1.7) ...
+7[25;0f[42m[30mProgress: [  4%][49m[39m [###...........................................................................] 8Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20211016_all.deb ...
+7[25;0f[42m[30mProgress: [  6%][49m[39m [####..........................................................................] 8Unpacking ca-certificates (20211016) ...
+7[25;0f[42m[30mProgress: [  8%][49m[39m [######........................................................................] 8Selecting previously unselected package libicu70:amd64.
+Preparing to unpack .../02-libicu70_70.1-2_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 10%][49m[39m [#######.......................................................................] 8Unpacking libicu70:amd64 (70.1-2) ...
+7[25;0f[42m[30mProgress: [ 12%][49m[39m [#########.....................................................................] 8Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../03-libnghttp2-14_1.43.0-1build3_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 14%][49m[39m [###########...................................................................] 8Unpacking libnghttp2-14:amd64 (1.43.0-1build3) ...
+7[25;0f[42m[30mProgress: [ 16%][49m[39m [############..................................................................] 8Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../04-libuv1_1.43.0-1_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 18%][49m[39m [##############................................................................] 8Unpacking libuv1:amd64 (1.43.0-1) ...
+7[25;0f[42m[30mProgress: [ 20%][49m[39m [###############...............................................................] 8Selecting previously unselected package javascript-common.
+Preparing to unpack .../05-javascript-common_11+nmu1_all.deb ...
+7[25;0f[42m[30mProgress: [ 22%][49m[39m [#################.............................................................] 8Unpacking javascript-common (11+nmu1) ...
+7[25;0f[42m[30mProgress: [ 24%][49m[39m [###################...........................................................] 8Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../06-libbrotli1_1.0.9-2build6_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 27%][49m[39m [####################..........................................................] 8Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+7[25;0f[42m[30mProgress: [ 29%][49m[39m [######################........................................................] 8Selecting previously unselected package libjs-highlight.js.
+Preparing to unpack .../07-libjs-highlight.js_9.18.5+dfsg1-1_all.deb ...
+7[25;0f[42m[30mProgress: [ 31%][49m[39m [#######################.......................................................] 8Unpacking libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[25;0f[42m[30mProgress: [ 33%][49m[39m [#########################.....................................................] 8Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../08-libc-ares2_1.18.1-1build1_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 35%][49m[39m [###########################...................................................] 8Unpacking libc-ares2:amd64 (1.18.1-1build1) ...
+7[25;0f[42m[30mProgress: [ 37%][49m[39m [############################..................................................] 8Selecting previously unselected package libnode72:amd64.
+Preparing to unpack .../09-libnode72_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 39%][49m[39m [##############################................................................] 8Unpacking libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+7[25;0f[42m[30mProgress: [ 41%][49m[39m [###############################...............................................] 8Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../10-nodejs-doc_12.22.9~dfsg-1ubuntu3_all.deb ...
+7[25;0f[42m[30mProgress: [ 43%][49m[39m [#################################.............................................] 8Unpacking nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+7[25;0f[42m[30mProgress: [ 45%][49m[39m [###################################...........................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../11-nodejs_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 47%][49m[39m [####################################..........................................] 8Unpacking nodejs (12.22.9~dfsg-1ubuntu3) ...
+7[25;0f[42m[30mProgress: [ 49%][49m[39m [######################################........................................] 8Setting up javascript-common (11+nmu1) ...
+7[25;0f[42m[30mProgress: [ 51%][49m[39m [#######################################.......................................] 87[25;0f[42m[30mProgress: [ 53%][49m[39m [#########################################.....................................] 8Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+7[25;0f[42m[30mProgress: [ 55%][49m[39m [##########################################....................................] 87[25;0f[42m[30mProgress: [ 57%][49m[39m [############################################..................................] 8Setting up libnghttp2-14:amd64 (1.43.0-1build3) ...
+7[25;0f[42m[30mProgress: [ 59%][49m[39m [##############################################................................] 87[25;0f[42m[30mProgress: [ 61%][49m[39m [###############################################...............................] 8Setting up libc-ares2:amd64 (1.18.1-1build1) ...
+7[25;0f[42m[30mProgress: [ 63%][49m[39m [#################################################.............................] 87[25;0f[42m[30mProgress: [ 65%][49m[39m [##################################################............................] 8Setting up libuv1:amd64 (1.43.0-1) ...
+7[25;0f[42m[30mProgress: [ 67%][49m[39m [####################################################..........................] 87[25;0f[42m[30mProgress: [ 69%][49m[39m [######################################################........................] 8Setting up libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[25;0f[42m[30mProgress: [ 71%][49m[39m [#######################################################.......................] 87[25;0f[42m[30mProgress: [ 73%][49m[39m [#########################################################.....................] 8Setting up openssl (3.0.2-0ubuntu1.7) ...
+7[25;0f[42m[30mProgress: [ 76%][49m[39m [##########################################################....................] 87[25;0f[42m[30mProgress: [ 78%][49m[39m [############################################################..................] 8Setting up libicu70:amd64 (70.1-2) ...
+7[25;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################................] 87[25;0f[42m[30mProgress: [ 82%][49m[39m [###############################################################...............] 8Setting up libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+7[25;0f[42m[30mProgress: [ 84%][49m[39m [#################################################################.............] 87[25;0f[42m[30mProgress: [ 86%][49m[39m [##################################################################............] 8Setting up ca-certificates (20211016) ...
+7[25;0f[42m[30mProgress: [ 88%][49m[39m [####################################################################..........] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+127 added, 0 removed; done.
+7[25;0f[42m[30mProgress: [ 90%][49m[39m [######################################################################........] 8Setting up nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+7[25;0f[42m[30mProgress: [ 90%][49m[39m [######################################################################........] 8Setting up nodejs (12.22.9~dfsg-1ubuntu3) ...
+7[25;0f[42m[30mProgress: [ 92%][49m[39m [#######################################################################.......] 8update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+7[25;0f[42m[30mProgress: [ 94%][49m[39m [#########################################################################.....] 8Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for ca-certificates (20211016) ...
+7[25;0f[42m[30mProgress: [ 96%][49m[39m [##########################################################################....] 8Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+7[25;0f[42m[30mProgress: [ 98%][49m[39m [############################################################################..] 8
+7[0;25r8[1A[J[?2004h]0;root@86c7b717a615: /root@86c7b717a615:/# [Knode -v
+[?2004lv12.22.9
+[?2004h]0;root@86c7b717a615: /root@86c7b717a615:/# node usr/s     /   /usr/src/app/index.js 
+[?2004lhello world
+[?2004h]0;root@86c7b717a615: /root@86c7b717a615:/# [Kexit
+[?2004lexit
+]0;family@family-80xg:~/Escritorio[?2004h[family@family-80xg Escritorio]$ exit
+[?2004lexit
+
+Script terminado en 2022-11-10 11:37:47-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

@@ -1,0 +1,33 @@
+Script iniciado en 2023-01-21 22:21:19-03:00 [TERM="xterm-kitty" TTY="/dev/pts/2" COLUMNS="91" LINES="50"]
+[?2004h]0;family@family-80xg: ~/Descargas/part12-containers-applications/script-answersfamily@family-80xg:~/Descargas/part12-containers-applications/script-answers$ docker contai ner ls
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+ec27323dc92e   mongo     "docker-entrypoint.s…"   14 minutes ago   Up 14 minutes   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend-mongo-1
+e30faa8cfe41   redis     "docker-entrypoint.s…"   14 minutes ago   Up 14 minutes   0.0.0.0:6378->6379/tcp, :::6378->6379/tcp     todo-backend-redis_db-1
+[?2004h]0;family@family-80xg: ~/Descargas/part12-containers-applications/script-answersfamily@family-80xg:~/Descargas/part12-containers-applications/script-answers$ docker exec - it todo-backend-redis_db-1
+[?2004l"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+[?2004h]0;family@family-80xg: ~/Descargas/part12-containers-applications/script-answersfamily@family-80xg:~/Descargas/part12-containers-applications/script-answers$ docker exec - it todo-backend-redis_db-1 bash
+[?2004l[?2004hroot@e30faa8cfe41:/data# [Kroot@e30faa8cfe41:/data# redis-cli 
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> Ke[18C[0K127.0.0.1:6379> Key[19C[0K127.0.0.1:6379> Keys[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> Key[19C[0K127.0.0.1:6379> Ke[18C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "count"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET c[0;90;49m [0m[21C[0K127.0.0.1:6379> GET cp[0;90;49m [0m[22C[0K127.0.0.1:6379> GET c[0;90;49m [0m[21C[0K127.0.0.1:6379> GET co[0;90;49m [0m[22C[0K127.0.0.1:6379> GET cou[0;90;49m [0m[23C[0K127.0.0.1:6379> GET coun[0;90;49m [0m[24C[0K127.0.0.1:6379> GET count[0;90;49m [0m[25C[0K127.0.0.1:6379> GET count[25C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> S[17C[0K127.0.0.1:6379> SE[18C[0K127.0.0.1:6379> SET[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seco[0m[19C[0K127.0.0.1:6379> SET [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seco[0m[20C[0K127.0.0.1:6379> SET c[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-second[0m[21C[0K127.0.0.1:6379> SET co[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-secon[0m[22C[0K127.0.0.1:6379> SET cou[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seco[0m[23C[0K127.0.0.1:6379> SET coun[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[24C[0K127.0.0.1:6379> SET count[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-se[0m[25C[0K127.0.0.1:6379> SET count [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-se[0m[26C[0K127.0.0.1:6379> SET count 9[0;90;49m [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-second[0m[27C[0K127.0.0.1:6379> SET count 90[0;90;49m [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-secon[0m[28C[0K127.0.0.1:6379> SET count 900[0;90;49m [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seco[0m[29C[0K127.0.0.1:6379> SET count 9001[0;90;49m [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[30C[0K127.0.0.1:6379> SET count 9001[30C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET c[0;90;49m [0m[21C[0K127.0.0.1:6379> GET co[0;90;49m [0m[22C[0K127.0.0.1:6379> GET cou[0;90;49m [0m[23C[0K127.0.0.1:6379> GET coun[0;90;49m [0m[24C[0K127.0.0.1:6379> GET count[0;90;49m [0m[25C[0K127.0.0.1:6379> GET count[25C
+"9002"
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[0;90;49m key [key ...][0m[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL c[0;90;49m [key ...][0m[21C[0K127.0.0.1:6379> DEL co[0;90;49m [key ...][0m[22C[0K127.0.0.1:6379> DEL cou[0;90;49m [key ...][0m[23C[0K127.0.0.1:6379> DEL coun[0;90;49m [key ...][0m[24C[0K127.0.0.1:6379> DEL count[0;90;49m [key ...][0m[25C[0K127.0.0.1:6379> DEL count[25C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET c[0;90;49m [0m[21C[0K127.0.0.1:6379> GET co[0;90;49m [0m[22C[0K127.0.0.1:6379> GET cou[0;90;49m [0m[23C[0K127.0.0.1:6379> GET coun[0;90;49m [0m[24C[0K127.0.0.1:6379> GET count[0;90;49m [0m[25C[0K127.0.0.1:6379> GET count[25C
+"1"
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004hroot@e30faa8cfe41:/data# exit
+[?2004lexit
+[?2004h]0;family@family-80xg: ~/Descargas/part12-containers-applications/script-answersfamily@family-80xg:~/Descargas/part12-containers-applications/script-answers$ exit
+[?2004lexit
+
+Script terminado en 2023-01-21 22:29:17-03:00 [CÓDIGO_SALIDA_ORDEN="0"]
